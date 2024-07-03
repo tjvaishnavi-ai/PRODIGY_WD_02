@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.stopwatch {
+    text-align: center;
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.stopwatch:hover {
+    transform: scale(1.05);
+}
+
+h1 {
+    margin: 0 0 10px;
+    font-size: 1.5em;
+}
+
+#display {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #00ff00;
+    transition: color 0.3s ease;
+}
+
+.controls button {
+    padding: 10px 20px;
+    font-size: 1em;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.controls button:hover {
+    background-color: #555;
+    transform: translateY(-2px);
+}
+
+.controls button:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+}
+
+.laps {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#lapTimes {
+    list-style: none;
+    padding: 0;
+}
+
+#lapTimes li {
+    padding: 5px 0;
+    border-bottom: 1px solid #333;
+    color: #00ff00;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
